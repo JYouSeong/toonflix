@@ -14,7 +14,9 @@ class MyWidget extends StatefulWidget {
 class _MyWidgetState extends State<MyWidget> {
   int counter = 0;
   void onclicked() {
-    counter += 1;
+    setState(() {
+      counter += 1;
+    });
   }
 
   @override
